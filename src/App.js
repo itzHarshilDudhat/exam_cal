@@ -13,7 +13,7 @@ const App = () => {
     let PR = ((Number(values.english) + Number(values.maths) + Number(values.history)) / 300) * 100;
 
     setPR(Math.ceil(PR))
-    if (PR <= 100 && PR >= 50) {
+    if (PR <= 100 && PR >= 75) {
       setGrade("A")
     } else if (PR <= 74 && PR >= 50) {
       setGrade("B")
