@@ -71,19 +71,18 @@ const App = () => {
                 </div>
               </Form.Item>
             </Form>
+            <h1>Result:</h1>
+            {grade ?
+              <div>
+                <p>You got <strong>{grade}</strong> grade in Exam, And You got PR :<strong> {percentage}</strong> in your exam</p>
+              </div>
+
+              : <>
+                <p>Please give your marks history to find Result</p>
+              </>
+            }
           </Card>
         </div>
-        <Card title="Result" className="result-card" style={{ height: 300, width: 300 }}>
-          {grade ?
-            <div>
-              <p>You got <strong>{grade}</strong> grade in Exam, And You got PR :<strong> {percentage}</strong> in your exam</p>
-            </div>
-
-            : <>
-              <p>Please give your marks history to find Result</p>
-            </>
-          }
-        </Card>
       </div>
 
     </>
